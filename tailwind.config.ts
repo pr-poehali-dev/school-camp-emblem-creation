@@ -114,6 +114,49 @@ export default {
 				'sparkle': {
 					'0%, 100%': { opacity: '0', transform: 'scale(0)' },
 					'50%': { opacity: '1', transform: 'scale(1)' }
+				},
+				'ray-flicker': {
+					'0%, 100%': { opacity: '0.9', transform: 'scaleY(1) scaleX(1)' },
+					'15%': { opacity: '0.3', transform: 'scaleY(0.7) scaleX(0.8)' },
+					'30%': { opacity: '1', transform: 'scaleY(1.2) scaleX(1.1)' },
+					'50%': { opacity: '0.5', transform: 'scaleY(0.85) scaleX(0.9)' },
+					'70%': { opacity: '1', transform: 'scaleY(1.3) scaleX(1.15)' },
+					'85%': { opacity: '0.4', transform: 'scaleY(0.75) scaleX(0.85)' },
+				},
+				'ray-burst': {
+					'0%': { transform: 'scaleY(1)', opacity: '0.85' },
+					'10%': { transform: 'scaleY(1.6)', opacity: '1' },
+					'20%': { transform: 'scaleY(0.6)', opacity: '0.5' },
+					'30%': { transform: 'scaleY(1.4)', opacity: '1' },
+					'45%': { transform: 'scaleY(1)', opacity: '0.85' },
+					'100%': { transform: 'scaleY(1)', opacity: '0.85' },
+				},
+				'wave-ripple': {
+					'0%': { transform: 'scale(0.8)', opacity: '0.8' },
+					'50%': { transform: 'scale(1.2)', opacity: '0.2' },
+					'100%': { transform: 'scale(0.8)', opacity: '0.8' },
+				},
+				'ring-wave': {
+					'0%': { r: '70', opacity: '0.6', strokeWidth: '2' },
+					'50%': { r: '90', opacity: '0', strokeWidth: '0' },
+					'100%': { r: '70', opacity: '0.6', strokeWidth: '2' },
+				},
+				'bg-pulse': {
+					'0%, 100%': { opacity: '0.12' },
+					'50%': { opacity: '0.28' },
+				},
+				'color-cycle': {
+					'0%':   { fill: '#FF6B35' },
+					'20%':  { fill: '#FFD700' },
+					'40%':  { fill: '#FF3CAC' },
+					'60%':  { fill: '#00C9FF' },
+					'80%':  { fill: '#2AF598' },
+					'100%': { fill: '#FF6B35' },
+				},
+				'title-wave': {
+					'0%, 100%': { transform: 'translateY(0px) scale(1)' },
+					'25%': { transform: 'translateY(-6px) scale(1.02)' },
+					'75%': { transform: 'translateY(4px) scale(0.98)' },
 				}
 			},
 			animation: {
@@ -128,6 +171,12 @@ export default {
 				'badge-pop': 'badge-pop 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards',
 				'shimmer': 'shimmer 3s linear infinite',
 				'sparkle': 'sparkle 2s ease-in-out infinite',
+				'ray-flicker': 'ray-flicker 3.5s ease-in-out infinite',
+				'ray-burst': 'ray-burst 4s ease-in-out infinite',
+				'wave-ripple': 'wave-ripple 2.5s ease-in-out infinite',
+				'bg-pulse': 'bg-pulse 3s ease-in-out infinite',
+				'color-cycle': 'color-cycle 6s linear infinite',
+				'title-wave': 'title-wave 4s ease-in-out infinite',
 			}
 		}
 	},
